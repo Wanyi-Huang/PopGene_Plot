@@ -28,7 +28,7 @@ The dxy values between populations or isolates are calculated in a sliding windo
 
 <h1>Installation Guide</h1>
 <h2>Package dependencies</h2>
-<code>install.packages(c('ggplot2', 'gridExtra') 
+<code>install.packages(c('ggplot2', 'gridExtra') )
 </code></p>
 
 <h1>Demo</h1>
