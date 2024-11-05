@@ -14,7 +14,8 @@ The dxy values between populations or isolates are calculated in a sliding windo
 
 <h1>System Requirements</h1>
 <h2>Hardware Requirements</h2>
-<p>The R package requires only a standard computer with enough RAM to support the operations defined by a user. For optimal performance, we recommend a computer with the following specs:</p>
+<p>The R package requires only a standard computer with enough RAM to support the operations defined by a user.</p> 
+<p>For optimal performance, we recommend a computer with the following specs:</p>
 <p>RAM: 16+ GB</p>
 <p>CPU: 4+ cores, 3.3+ GHz/core</p>
 <p>The package has been tested on the following systems:</p>
