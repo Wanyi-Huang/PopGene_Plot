@@ -1,6 +1,6 @@
 #There are 4 populations/isolates named as 1, 2, 3, and 4. We will plot the dxy values between the 2 and other ones. 
 
-#Combine the files with the dxy values of each pair of populations/isolates
+#Combine the files with the dxy values of each pair of populations/isolates.
 ID <- 2
 for (i in 1:length(ID)){
   pop1 <- ID[i]
@@ -29,7 +29,7 @@ library(gridExtra)
 PopA<-"2"
 PopB<-c(1,3,4)
 
-#Making combined plot
+#Making a combined plot:
 for (j in 1:8){
   dxy<-read.table(paste(PopA,"_Chr",j,".txt",sep = ""),header = T)
   loc<-dxy$start
@@ -64,7 +64,7 @@ for (j in 1:8){
 }
 grid.arrange(arrangeGrob(Fig1,Fig2,Fig3,Fig4,nrow=4),arrangeGrob(Fig5,Fig6,Fig7,Fig8,nrow=4),ncol=2,widths=c(4,4))
 
-#Makeing single plot
+#Makeing a single plot.
 PopA<-"2"
 PopB<-"1"
 
