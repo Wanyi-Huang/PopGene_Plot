@@ -24,6 +24,8 @@ for (i in 1:length(ID)){
 #Library packages:
 library(ggplot2)
 library(gridExtra)
+
+#Assign the populations/isolates named to PopA and B.
 PopA<-"2"
 PopB<-c(1,3,4)
 
