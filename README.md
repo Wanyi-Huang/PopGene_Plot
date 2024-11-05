@@ -32,5 +32,5 @@ The dxy values between populations or isolates are calculated in a sliding windo
 </code></p>
 
 <h1>Demo</h1>
-For demos of the functions, please check out each R script.
+For demos of the functions, please check out each R script. The test files are the data from a population genetic study of <em>Cyptosporidium hominis</em>, an apicomplexa parasite with a genome of approximately 9 Mb in eight chromosomes.
 
