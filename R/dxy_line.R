@@ -29,7 +29,7 @@ library(gridExtra)
 PopA<-"2"
 PopB<-c(1,3,4)
 
-#Making a combined plot:
+#Create a combined plot:
 for (j in 1:8){
   dxy<-read.table(paste(PopA,"_Chr",j,".txt",sep = ""),header = T)
   loc<-dxy$start
@@ -64,7 +64,7 @@ for (j in 1:8){
 }
 grid.arrange(arrangeGrob(Fig1,Fig2,Fig3,Fig4,nrow=4),arrangeGrob(Fig5,Fig6,Fig7,Fig8,nrow=4),ncol=2,widths=c(4,4))
 
-#Makeing a single plot.
+#Create separate plots:
 PopA<-"2"
 PopB<-"1"
 
