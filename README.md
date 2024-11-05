@@ -17,7 +17,9 @@ The dxy values between populations or isolates are calculated in a sliding windo
 <p>The R package requires only a standard computer with enough RAM to support the operations defined by a user. For optimal performance, we recommend a computer with the following specs:</p>
 <p>RAM: 16+ GB</p>
 <p>CPU: 4+ cores, 3.3+ GHz/core</p>
-<p>The runtimes below are generated using a computer with the recommended specs.</p>
+<p>The package has been tested on the following systems:</p>
+<p>macOS: Sonoma (14.1)</p>
+<p>Linux: Ubuntu 16.04</p>
 <h2>Software Requirements</h2>
 <p>The package development version is tested on Linux operating systems.</p>
 <p>The R package should be compatible with Windows, Mac, and Linux operating systems.</p>
