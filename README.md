@@ -1,9 +1,16 @@
 # PopGene_Plot
-R scripts for visualizing population genetic analyses (PopGene).
 <h1>Overview</h1>
-
-<p>The script [ABBABABAwindows.py](https://github.com/simonhmartin/genomics_general) performs analyses described in Martin et al. 2015, MBE, compurting the D statistic and f estimators in windows across the genome.</p>
-<p>The modified fd test with 100-kb sliding windows and 10-kb steps is performed as described using ABBABABAwindows.py in Genomics_general. Three populations and one outgroup are used with the relationship (((P1, P2), P3), O), where P1 is closer to P2 than P3. Positive fd values are considered as introgression signals and visualized in dot plots using the R package ‘ggplot2’.</p>
+Statistical analysis in population genetic (PopGene) studies is essential for interpreting genetic data and understanding evolutionary processes. We produce R scripts to visualize the data from the statistical analysis.</p> 
+<p><strong>absolute divergence (dxy)</strong></p> 
+<p>This statistic measures the genetic divergence between two populations based on nucleotide differences.</p> 
+The dxy values between populations or isolates are calculated in a sliding window using [popgenWindows.py]((https://github.com/simonhmartin/genomics_general) in Genomics_general.
+<p><strong>modified D statistic</strong></p> 
+<p>The modified D statistic (fd) is an extension of the traditional D statistic (also known as the ABBA-BABA statistic) used in population genetics to detect gene flow between closely related species.</p> 
+<p>The fd test with sliding windows and steps is performed using [ABBABABAwindows.py](https://github.com/simonhmartin/genomics_general) in Genomics_general . Three populations and one outgroup are used with the relationship (((P1, P2), P3), O), where P1 is closer to P2 than P3.</p> 
+<p><strong>Nucleotide diversity</strong></p> 
+<p>Nucleotide diversity (pi) is a key concept in population genetics that measures the genetic variation within a population. It quantifies how different the DNA sequences are among individuals at specific loci, providing insights into the population’s evolutionary history and adaptability.</p> 
+<p>The pi is calculated among isolates using the [Vcftools 0.1.16](https://vcftools.github.io/index.html) with sliding windows.</p> 
+<p><strong>The dxy, fd, and pi values are visualized using the R package ‘ggplot2’.</strong></p> 
 
 <h1>System Requirements</h1>
 <h2>Hardware Requirements</h2>
