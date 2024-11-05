@@ -6,10 +6,10 @@ Statistical analysis in population genetic (PopGene) studies is essential for in
 The dxy values between populations or isolates are calculated in a sliding window using <a href="https://github.com/simonhmartin/genomics_general">popgenWindows.py</a> in Genomics_general.
 <p><strong>modified D statistic</strong></p> 
 <p>The modified D statistic (fd) is an extension of the traditional D statistic (also known as the ABBA-BABA statistic) used in population genetics to detect gene flow between closely related species.</p> 
-<p>The fd test with sliding windows and steps is performed using [ABBABABAwindows.py](https://github.com/simonhmartin/genomics_general) in Genomics_general . Three populations and one outgroup are used with the relationship (((P1, P2), P3), O), where P1 is closer to P2 than P3.</p> 
+<p>The fd test with sliding windows and steps is performed using <a href="https://github.com/simonhmartin/genomics_general">ABBABABAwindows.py</a> in Genomics_general . Three populations and one outgroup are used with the relationship (((P1, P2), P3), O), where P1 is closer to P2 than P3.</p> 
 <p><strong>Nucleotide diversity</strong></p> 
 <p>Nucleotide diversity (pi) is a key concept in population genetics that measures the genetic variation within a population. It quantifies how different the DNA sequences are among individuals at specific loci, providing insights into the population’s evolutionary history and adaptability.</p> 
-<p>The pi is calculated among isolates using the [Vcftools 0.1.16](https://vcftools.github.io/index.html) with sliding windows.</p> 
+<p>The pi is calculated among isolates using the <a href="https://vcftools.github.io/index.html">Vcftools 0.1.16</a> with sliding windows.</p> 
 <p><strong>The dxy, fd, and pi values are visualized using the R package ‘ggplot2’.</strong></p> 
 
 <h1>System Requirements</h1>
@@ -31,4 +31,5 @@ The dxy values between populations or isolates are calculated in a sliding windo
 <code>install.packages('ggplot2')
 </code></p>
 
+<h1>Demo</h1>
 
