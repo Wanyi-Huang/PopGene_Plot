@@ -1,7 +1,7 @@
-#Library packages:
+#Library package:
 library(ggplot2)
 
-#Read data
+#Read data:
 dt <- read.table("windowed.pi.txt",sep="\t", header = T)
 
 #C. hominis has a genome of approximately 9 Mb in eight chromosomes. Assign the lengths of each chromosome to LChr.
@@ -25,7 +25,13 @@ vari<-vari[order(vari$pos),]
 vari<-vari[,c(1,2,4,8,9)]
 names(vari)<-c("ID","Chr","pos","variation","pi")
 
-#Format plots
+#Create a pi plot
+p1<-ggplot(vari, aes(pos, pi))+geom_point(aes(y=pi,color=Chr))
+p1<-p1+scale_x_continuous(limits = c(-1000, 9100001),breaks = c(440001, 1370001, 2410001, 3510001, 4610001,5800001,7090001,8400001),label = NULL)
+p1<-p1+scale_y_continuous(limits = c(-0.00001,0.008),breaks = c(0,0.002,0.004,0.006,0.008),labels = c("0.000","0.002","0.004","0.006","0.008"))
+p1<-p1+labs(y="pi",x=NULL)
+
+#Format the plot:
 top.mar=0.2
 right.mar=0.2
 bottom.mar=0.2
@@ -41,11 +47,5 @@ mytheme<-theme(panel.grid.major =element_blank(),
                axis.text.y = element_text(size=rel(1.2),color="black"),
                #axis.text.x = element_text(size=rel(1.2),color="white"),
                plot.margin=unit(x=c(top.mar,right.mar,bottom.mar,left.mar),units="inches"))
-
-#Create a pi plot
-p1<-ggplot(vari, aes(pos, pi))+geom_point(aes(y=pi,color=Chr))
-p1<-p1+scale_x_continuous(limits = c(-1000, 9100001),breaks = c(440001, 1370001, 2410001, 3510001, 4610001,5800001,7090001,8400001),label = NULL)
-p1<-p1+scale_y_continuous(limits = c(-0.00001,0.008),breaks = c(0,0.002,0.004,0.006,0.008),labels = c("0.000","0.002","0.004","0.006","0.008"))
-p1<-p1+labs(y="pi",x=NULL)
 p1<-p1+mytheme
 p1
