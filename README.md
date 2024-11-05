@@ -2,7 +2,7 @@
 <h1>Overview</h1>
 Statistical analysis in population genetic studies (PopGene) is essential for interpreting genetic data and understanding evolutionary processes. We provide R scripts to visualize the data from the statistical analysis.</p> 
 <p><strong>Absolute divergence</strong></p> 
-<p>This absolute divergence (dxy) measures the genetic divergence between two populations based on nucleotide differences.</p> 
+<p>The absolute divergence (dxy) measures the genetic divergence between two populations based on nucleotide differences.</p> 
 The dxy values between populations or isolates are calculated in a sliding window using <a href="https://github.com/simonhmartin/genomics_general">popgenWindows.py</a> in Genomics_general.</p> 
 <p><strong>Modified D statistic</strong></p> 
 <p>The modified D statistic (fd) is an extension of the traditional D statistic (also known as the ABBA-BABA statistic) used in population genetics to detect gene flow between closely related species.</p> 
