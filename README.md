@@ -1,6 +1,6 @@
 # PopGene_Plot
 <h1>Overview</h1>
-Statistical analysis in population genetic (PopGene) studies is essential for interpreting genetic data and understanding evolutionary processes. We produce R scripts to visualize the data from the statistical analysis.</p> 
+Statistical analysis in population genetic studies (PopGene) is essential for interpreting genetic data and understanding evolutionary processes. We provide R scripts to visualize the data from the statistical analysis.</p> 
 <p><strong>absolute divergence (dxy)</strong></p> 
 <p>This statistic measures the genetic divergence between two populations based on nucleotide differences.</p> 
 The dxy values between populations or isolates are calculated in a sliding window using <a href="https://github.com/simonhmartin/genomics_general">popgenWindows.py</a> in Genomics_general.
@@ -9,7 +9,7 @@ The dxy values between populations or isolates are calculated in a sliding windo
 <p>The fd test with sliding windows and steps is performed using <a href="https://github.com/simonhmartin/genomics_general">ABBABABAwindows.py</a> in Genomics_general . Three populations and one outgroup are used with the relationship (((P1, P2), P3), O), where P1 is closer to P2 than P3.</p> 
 <p><strong>Nucleotide diversity</strong></p> 
 <p>Nucleotide diversity (pi) is a key concept in population genetics that measures the genetic variation within a population. It quantifies how different the DNA sequences are among individuals at specific loci, providing insights into the population’s evolutionary history and adaptability.</p> 
-<p>The pi is calculated among isolates using the <a href="https://vcftools.github.io/index.html">Vcftools 0.1.16</a> with sliding windows.</p> 
+<p>The pi is calculated between isolates using the <a href="https://vcftools.github.io/index.html">Vcftools 0.1.16</a> with sliding windows.</p> 
 <p><strong>The dxy, fd, and pi values are visualized using the R package ‘ggplot2’.</strong></p> 
 
 <h1>System Requirements</h1>
