@@ -2,7 +2,7 @@
 library(ggplot2)
 
 #Read data:
-dt <- read.table("windowed.pi.txt",sep="\t", header = T)
+dt <- read.table("windowed.SNP.pi.txt",sep="\t", header = T)
 
 #C. hominis has a genome of approximately 9 Mb in eight chromosomes. Assign the lengths of each chromosome to LChr.
 LChr <- c(866743,982620,1066810,1105361,1087727,1295560,1315942,1306564)
