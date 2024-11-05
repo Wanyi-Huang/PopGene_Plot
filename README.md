@@ -32,4 +32,5 @@ The dxy values between populations or isolates are calculated in a sliding windo
 </code></p>
 
 <h1>Demo</h1>
+For demos of the functions, please check out each R script.
 
